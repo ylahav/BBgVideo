@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="module" method="install" client="site">
+    <name>mod_bbgvideo</name>
+    <creationDate>2015 june 30</creationDate>
+    <author></author>
+    <authorEmail></authorEmail>
+    <authorUrl></authorUrl>
+    <copyright></copyright>
+    <license></license>
+    <version>1.0.1</version>
+    <description>MOD_BBGVIDEO_XML_DESCRIPTION</description>
+
+    <files>
+        <filename module="mod_bbgvideo">mod_bbgvideo.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+        <folder>css</folder>
+    </files>
+
+    <languages>
+        <language tag="en-GB">language/en-GB.mod_bbgvideo.ini</language>
+        <language tag="en-GB">language/en-GB.mod_bbgvideo.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="options" label="COM_MODULES_BASIC_FIELDSET_LABEL">
+                <field name="header"
+                       type="text"
+                       label="MOD_BBGVIDEO_HEADER_FIELD_LABEL"
+                       description="MOD_BBGVIDEO_HEADER_FIELD_DESC" />
+                <field name="content"
+                       type="editor"
+                       width="200"
+                       rows="10"
+                       filter="safehtml"
+                       label="MOD_BBGVIDEO_CONTENT_FIELD_LABEL"
+                       description="MOD_BBGVIDEO_CONTENET_FIELD_DESC" />
+                <field name="readmorelink"
+                       type="menuitem"
+                       label="MOD_BBGVIDEO_MENUITEM_FIELD_LABEL"
+                       description="MOD_BBGVIDEO_MENUITEM_FIELD_DESC" />
+            </fieldset>
+            <fieldset name="bg_def" label="MOD_BBGVIDEO_BG_DEF">
+                <field name="videosource"
+                       type="radio"
+					   default="0"
+                       label="MOD_BBGVIDEO_VIDEO_SRC_FIELD_LABEL"
+                       description="MOD_BBGVIDEO_VIDEO_SRC_FIELD_DESC">
+                    <option value="youtube">MOD_BBGVIDEO_SRC_YOUTUBE</option>
+                    <option value="url">MOD_BBGVIDEO_SRC_URL</option>
+                </field>
+                <field name="youtubeid"
+                       type="url"
+                       label="MOD_BBGVIDEO_YUOTUBEID_FIELD_LABEL"
+                       description="MOD_BBGVIDEO_YUOTUBEID_FIELD_DESC" />
+                <field name="url"
+                       type="url"
+                       label="MOD_BBGVIDEO_URL_FIELD_LABEL"
+                       description="MOD_BBGVIDEO_URL_FIELD_DESC" />
+                <field name="backgroundf"
+                       type="radio"
+					   default="0"
+                       label="MOD_BBGVIDEO_BG_FLAG_FIELD_LABEL"
+                       description="MOD_BBGVIDEO_BG_FLAG_FIELD_DESC">
+                    <option value="1">MOD_BBGVIDEO_YES</option>
+                    <option value="0">MOD_BBGVIDEO_NO</option>
+                </field>
+                <field name="top_position"
+                       type="text"
+                       width="5"
+                       label="MOD_BBGVIDEO_TOP_POS_FIELD_LABEL"
+                       description="MOD_BBGVIDEO_TOP_POS_FIELD_DESC" />
+                <field name="z_index"
+                       type="text"
+                       default="-5"
+                       label="MOD_BBGVIDEO_Z_INDEX_FIELD_LABEL"
+                       description="MOD_BBGVIDEO_Z_INDEX_FIELD_DESC" />
+				<field name="height"
+                       type="text"
+                       default="100%"
+                       label="MOD_BBGVIDEO_HEIGHT_FIELD_LABEL"
+                       description="MOD_BBGVIDEO_HEIGHT_FIELD_DESC" />
+            </fieldset>
+            <fieldset
+                name="advanced">
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+                <field
+                    name="moduleclass_sfx"
+                    type="textarea" rows="3"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+                <field
+                    name="cache"
+                    type="list"
+                    default="1"
+                    label="COM_MODULES_FIELD_CACHING_LABEL"
+                    description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option
+                        value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option
+                        value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field
+                    name="cache_time"
+                    type="text"
+                    default="900"
+                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                    description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+                <field
+                    name="cachemode"
+                    type="hidden"
+                    default="static">
+                    <option
+                        value="static">
+                    </option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
