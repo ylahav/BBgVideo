@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.0" type="module" method="install" client="site">
-    <name>mod_bbgvideo</name>
-    <creationDate>2015 june 30</creationDate>
-    <author></author>
-    <authorEmail></authorEmail>
-    <authorUrl></authorUrl>
-    <copyright></copyright>
-    <license></license>
-    <version>1.0.1</version>
+    <name>B-Background Video</name>
+    <creationDate>July 2015</creationDate>
+    <author>Yair Lahav</author>
+    <authorEmail>Yair@bonimba.co.il</authorEmail>
+    <authorUrl>www.bonimba.co.il</authorUrl>
+    <copyright>Copyright (c) 2015 Yair Lahav. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>1.0.2</version>
     <description>MOD_BBGVIDEO_XML_DESCRIPTION</description>
 
     <files>

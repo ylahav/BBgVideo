@@ -1,9 +1,12 @@
 <?php
-/**
- * @author
- * @copyright
- * @license
- */
+
+/*
+ * @version		$Id: mod_bbgvideo.php $
+ * @package		Joomla
+ * @copyright   Copyright (C) 2015 Yair Lahav
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+*/
+
 
 defined("_JEXEC") or die("Restricted access");
 
