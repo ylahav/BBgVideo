@@ -27,7 +27,7 @@ if ($params['backgroundf']) {
 ?>
 
 <div class="b-bgvideo">
-    <div class="b-bgvideo-wrap" <?php echo $params['backgroundf']? "" : 'style="padding-bottom: 56.25%;"'; ?>>
+    <div class="b-bgvideo-wrap" <?php echo $params['backgroundf']? "" : 'style="padding-bottom: '. $params['height'] . ';"'; ?>>
 	<?php if (!$params['backgroundf']) { ?>
 		<div class="content">
 			<div class="inner">
@@ -42,6 +42,12 @@ if ($params['backgroundf']) {
         </div>
         <div class="mask">&nbsp;</div>
 		<?php } ?>
+        <?php if($params['displaymode'] == 'iframe') { ?>
         <iframe  <?php echo $styleStr; ?> src="<?php echo $videoUrl; ?>" frameborder="0"></iframe>
+        <?php } else { ?>
+        <video <?php echo $styleStr; ?> autoplay <?php echo $params['loop']? " loop" : ""; ?>>
+            <source src="<?php echo $videoUrl; ?>" type="video/mp4" />
+        </video>
+        <?php } ?>
     </div>
 </div>

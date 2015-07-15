@@ -38,7 +38,8 @@
     opacity: 0.6;
 }
 
-.b-bgvideo .b-bgvideo-wrap iframe {
+.b-bgvideo .b-bgvideo-wrap iframe,
+.b-bgvideo .b-bgvideo-wrap video {
     top: 0px;
     left: 0px;
     width: 100%;

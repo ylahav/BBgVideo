@@ -38,9 +38,12 @@
                        label="MOD_BBGVIDEO_CONTENT_FIELD_LABEL"
                        description="MOD_BBGVIDEO_CONTENET_FIELD_DESC" />
                 <field name="readmorelink"
+                       default="0"
                        type="menuitem"
                        label="MOD_BBGVIDEO_MENUITEM_FIELD_LABEL"
-                       description="MOD_BBGVIDEO_MENUITEM_FIELD_DESC" />
+                       description="MOD_BBGVIDEO_MENUITEM_FIELD_DESC">
+                    <option value="0">MOD_BBGVIDEO_MENU_SELECT</option>
+                </field>
             </fieldset>
             <fieldset name="bg_def" label="MOD_BBGVIDEO_BG_DEF">
                 <field name="videosource"
@@ -59,11 +62,27 @@
                        type="url"
                        label="MOD_BBGVIDEO_URL_FIELD_LABEL"
                        description="MOD_BBGVIDEO_URL_FIELD_DESC" />
+                <field name="displaymode"
+                       type="radio"
+					   default="0"
+                       label="MOD_BBGVIDEO_DISPLAY_MODE_FIELD_LABEL"
+                       description="MOD_BBGVIDEO_DISPLAY_MODE_FIELD_DESC">
+                    <option value="html5">MOD_BBGVIDEO_DISPLAY_MODE_HTML5</option>
+                    <option value="iframe">MOD_BBGVIDEO_DISPLAY_MODE_IFRAME</option>
+                </field>
                 <field name="backgroundf"
                        type="radio"
 					   default="0"
                        label="MOD_BBGVIDEO_BG_FLAG_FIELD_LABEL"
                        description="MOD_BBGVIDEO_BG_FLAG_FIELD_DESC">
+                    <option value="1">MOD_BBGVIDEO_YES</option>
+                    <option value="0">MOD_BBGVIDEO_NO</option>
+                </field>
+                <field name="loop"
+                       type="radio"
+					   default="1"
+                       label="MOD_BBGVIDEO_LOOP_FIELD_LABEL"
+                       description="MOD_BBGVIDEO_LOOP_FIELD_DESC">
                     <option value="1">MOD_BBGVIDEO_YES</option>
                     <option value="0">MOD_BBGVIDEO_NO</option>
                 </field>
